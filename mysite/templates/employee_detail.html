@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Detail</title>
+</head>
+<body>
+    <h1>Employee Detail</h1>
+    <p>Employee Name: {{ employee.employeename }}</p>
+    <p>Employee ID: {{ employee.employeeid }}</p>
+    <p>Asset ID: {{ employee.assetid }}</p>
+    <p>Gender: {{ employee.gender }}</p>
+    <p>Start Date: {{ employee.start_date }}</p>
+    <p>End Date: {{ employee.end_date }}</p>
+    <a href="{% url 'employee_update' employee.pk %}">Edit</a>
+    <a href="{% url 'employee_delete' employee.pk %}">Delete</a>
+</body>
+</html>
